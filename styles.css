@@ -1,0 +1,50 @@
+body {
+    background-color: #ffffff;  
+}
+#navbar {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 100vh;
+    padding: 1px 10px;
+    margin: 0;
+    border-right: 1px solid #000;
+    height: 100%;
+    overflow: auto;
+    box-shadow: 5px 0px 15px 1px #000000;
+}
+#navbar a, #navbar li {
+    left: 0;
+    display: block;
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid #000;
+}
+#navbar a:hover {
+    background-color: #f1f1f1;
+}
+main {
+    margin-left: 35%;
+    padding: 1px 16px;
+    height: 1000px;
+}
+pre {
+    background-color: #f1f1f1;
+    padding: 2px;
+}
+code {
+    font-family: monospace;
+}
+@media (max-width: 768px) {
+    .sidebar {
+        display: none; /* Versteckt die Sidebar auf kleinen Bildschirmen */
+    }
+
+    .content {
+        width: 100%; /* Der Hauptinhalt nimmt die ganze Breite ein */
+    }
+}
